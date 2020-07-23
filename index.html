@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Digital Marketing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html{
+
+ background: url('aparna42.jpeg') no-repeat center fixed;
+  background-size: cover;
+
+}
+h1
+{
+color:green:
+}
+.header{
+background-image: url('aparna13.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+padding: 10px;
+text-align:center;
+}
+.column
+{
+float:left;
+padding:10px;
+}
+
+.column.side{
+ width:100%;
+ text-align: center;
+ color:#333 ;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 100%;
+  margin-left: -3;
+  /*background-color:#fefbd8 ;*/
+  height: auto;
+  color: #000;
+  border-radius: 10px;
+}
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.topnav {
+  overflow: hidden;
+  /*background-color:#000;*/
+  position: relative;
+  height: auto;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #80ced6;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #80ced6;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 20%;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  height: 5vh;
+}
+
+input[type=text]:focus {
+border: 3px solid yellow;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1px;
+}a
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=text], select, textarea {
+  width: 60%;
+  }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+a {
+text-decoration: none;
+padding: 20px;
+color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+<a href="#home" class="active">MENU</a>
+<div id="myLinks">
+<a href="#our strategy">our strategy</a>
+<a href="#specialization">specialization</a>
+<a href="#us">Us</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<div class="header">
+<br><br>
+<h1>
+<span style="padding-left: 10px;border-left: 10px solid #000;padding-right: 10px;border-right: 10px solid #000;padding: 20px;border-radius: 20px;">
+DIGITAL MARKETING
+</span>
+</h1><br><br>
+<img src="aparna27.jpeg" style="width: 70%;height: 40vh;box-shadow: 10px 5px 10px cyan;border-radius: 20px;" />
+<br><br><h2>OUR STRATEGY</h2><hr width="20%">
+<p style="line-height: 30px;padding: 20px;color:#fff;"><b><i> As digital marketers, we are always<br> challenged with finding productive ways<br> to get results for our customers</i></b></p>
+</div><br>
+<h1 style= "text-align : center;"> Our Services</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="aparna1.png" style="width:100%;height: 40vh;">
+</div>
+
+<div class="mySlides fade">
+  <img src="aparna2.jpeg" style="width:100%;height: 40hv;">
+</div>
+
+<div class="mySlides fade">
+  <img src="aparna3.png" style="width:100%;height: 40hv;">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="row">
+<div class="column side">
+<br><br><h2> Our Specialization</h2><hr width="20%">
+
+<p style="line-height: 30px;padding: 20px;"><b><i>We pick the best stragies for <br>our customers according to their <br>needs and accomodation </i></b></p>
+</div>
+</div>
+
+<div class="row">
+<div class="column side">
+<h2>Who are we</h2><hr width="15%">
+<p style="line-height: 30px;padding: 20px;"><b><i>We are creative agencies made up of<br>smart creative and passionate people.<br>Our team is ready to work with you to create a<br> marketing solution that fits in yours(customers)<br>needs and budgets.</i></b></p>
+</div>
+</div>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2><hr width="20%">
+    <p style="line-height: 30px;padding: 20px;">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+        <center>
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+       
+<label for="country">country:</label>
+<input type="text" id="country" placeholder="india"> <br>
+
+    <p>Subject: <textarea id="subject" name="subject" placeholder="Write something.." style="height:10vh;"></textarea><br>
+       
+        <input type="submit" value="Submit">
+
+      </form></center>
+    </div>
+  </div>
+
+<center><h2> Social Media Buttons</h2></center><hr width="20%"><br><br>
+
+<!-- Add font awesome icons -->
+<center><span>
+<a href="https://www.facebook.com/ishika.bharadwaj131" class="fa fa-facebook" style="text-decoration: none;background-color: blue;color:#fff;padding: 20px;" ></a>
+
+<a href="https://www.twitter.com/@IshikaBharadwa2" class="fa fa-twitter" style="text-decoration: none;background-color: #55ACEE;color: #fff;padding: 20px;"></a>
+
+<a href="https://www.linkedin.com/in/aparna-dash-b315561ab/" class="fa fa-linkedin" style="text-decoration: none;background-color: #007bb5;color: #fff;padding: 20px;"></a>
+
+<a href="https://www.instagram.com/_aparna_dash_07" class="fa fa-instagram" style="text-decoration: none;background-color: #125688;color: #fff;padding: 20px;"></a>
+
+
+</span></center>
+
+<a href="tel:+1123-456-7890">123-456-7890</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</body>
+</html>
